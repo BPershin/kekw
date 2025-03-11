@@ -25,6 +25,7 @@ public class WebDriverConfig {
         Configuration.timeout = 5000;
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
         return new ChromeDriver(options);
     }
 
