@@ -24,6 +24,7 @@ public class WebDriverConfig {
         System.setProperty("webdriver.chrome.driver", driverPath);
         Configuration.timeout = 5000;
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         return new ChromeDriver(options);
     }
 
